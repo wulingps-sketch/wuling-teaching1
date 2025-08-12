@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📚 武陵國小教學素材中心</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <h1>📚 武陵國小教學素材中心</h1>
+    </header>
+
+    <!-- 未登入顯示區 -->
+    <section id="loginSection" class="card center">
+      <p>請使用 Google 帳號登入以使用教案功能</p>
+      <button id="loginBtn" class="btn primary">使用 Google 登入</button>
+    </section>
+
+    <!-- 登入後顯示區（預設隱藏） -->
+    <section id="appSection" class="hidden">
+      <div class="userbar">
+        <div id="userName">👩‍🏫 老師</div>
+        <div>
+          <button id="logoutBtn" class="btn outline">登出</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tabbtn active" data-tab="editor">教案撰寫</button>
+        <button class="tabbtn" data-tab="upload">教材上傳</button>
+      </div>
+
+      <div id="editor" class="tabcontent">
+        <div class="card">
+          <label>教案標題</label>
+          <input id="lessonTitle" placeholder="請輸入教案標題" />
+
+          <label>教案內容</label>
+          <textarea id="lessonContent" rows="8" placeholder="請輸入教案內容"></textarea>
+
+          <button id="submitLesson" class="btn primary">送出教案（示意）</button>
+        </div>
+      </div>
+
+      <div id="upload" class="tabcontent hidden">
+        <div class="card">
+          <label>選擇教材檔案（PPT, PDF）</label>
+          <input id="fileInput" type="file" multiple />
+          <ul id="fileList"></ul>
+          <button id="uploadFiles" class="btn primary">上傳教材（示意）</button>
+        </div>
+      </div>
+
+      <footer class="foot">備註：這是測試版，檔案暫不會實際上傳到 Storage（可後續接）</footer>
+    </section>
+  </div>
+
+  <!-- 主程式 -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+add index.html
