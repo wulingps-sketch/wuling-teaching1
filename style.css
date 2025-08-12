@@ -1,0 +1,26 @@
+:root{
+  --bg:#fff8f0;
+  --card:#fff;
+  --accent:#ff8b6b;
+  --muted:#666;
+}
+*{box-sizing:border-box;font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",Arial;}
+body{margin:0;background:var(--bg);color:#222}
+.container{max-width:900px;margin:24px auto;padding:16px}
+.topbar{display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.topbar h1{margin:0;font-size:1.6rem}
+.card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.center{text-align:center}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid transparent;cursor:pointer;margin:6px}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn.outline{background:transparent;border-color:#ccc}
+.hidden{display:none}
+.userbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tabbtn{padding:8px 12px;border-radius:8px;background:#fff;border:1px solid #eee;cursor:pointer}
+.tabbtn.active{background:var(--accent);color:#fff}
+label{display:block;margin-top:8px;font-weight:600}
+input, textarea{width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd}
+#fileList{margin-top:8px;padding-left:18px;color:var(--muted)}
+.foot{margin-top:12px;color:#888;font-size:0.9rem}
+style.css
